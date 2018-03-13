@@ -1,3 +1,4 @@
+import path from 'path';
 import {
   guessAuthorEmail,
   guessAuthorName,
@@ -64,12 +65,13 @@ export default class YoBasePrompts {
   }
 
   async destinationPrompt(name) {
-    return this.optionOrPrompt({
+    const destination = await this.optionOrPrompt({
       type: 'input',
       name: 'destination',
       message: 'Destination:',
       default: guessProjectDestination(name)
     });
+    return path.resolve(destination);
   }
 
   async descriptionPrompt() {
