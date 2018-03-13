@@ -96,8 +96,8 @@ export default class YoBasePrompts {
       name: 'license',
       message: 'License:',
       choices: [
-        { name: 'Apache 2.0', value: 'Apache-2.0' },
         { name: 'MIT', value: 'MIT' },
+        { name: 'Apache 2.0', value: 'Apache-2.0' },
         { name: 'Mozilla Public License 2.0', value: 'MPL-2.0' },
         {
           name: 'BSD 2-Clause (FreeBSD) License',
