@@ -64,7 +64,7 @@ export default class YoBasePrompts {
   }
 
   async namePromt() {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'name',
       message: 'Project Name:',
@@ -73,7 +73,7 @@ export default class YoBasePrompts {
   }
 
   async destinationPrompt(name) {
-    const destination = await this.optionOrPrompt({
+    const destination = await this.yo.optionOrPrompt({
       type: 'input',
       name: 'destination',
       message: 'Destination:',
@@ -83,7 +83,7 @@ export default class YoBasePrompts {
   }
 
   async descriptionPrompt() {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'description',
       message: 'Project Description:',
@@ -92,7 +92,7 @@ export default class YoBasePrompts {
   }
 
   async versionPrompt() {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'version',
       message: 'Version:',
@@ -101,7 +101,7 @@ export default class YoBasePrompts {
   }
 
   async licensePrompt() {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'list',
       name: 'license',
       message: 'License:',
@@ -126,7 +126,7 @@ export default class YoBasePrompts {
   }
 
   async authorNamePrompt() {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'authorName',
       message: 'Author Name:',
@@ -135,7 +135,7 @@ export default class YoBasePrompts {
   }
 
   async authorEmailPrompt() {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'authorEmail',
       message: 'Author Email:',
@@ -144,7 +144,7 @@ export default class YoBasePrompts {
   }
 
   async githubUsernamePrompt(authorEmail) {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'githubUsername',
       message: 'GitHub Username:',
@@ -153,7 +153,7 @@ export default class YoBasePrompts {
   }
 
   async authorUrlPrompt(githubUsername) {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'authorUrl',
       message: 'Author URL:',
@@ -162,7 +162,7 @@ export default class YoBasePrompts {
   }
 
   async repositoryPrompt(githubUsername, name) {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'repository',
       message: 'Repository:',
@@ -171,7 +171,7 @@ export default class YoBasePrompts {
   }
 
   async homepagePrompt(repository) {
-    return this.optionOrPrompt({
+    return this.yo.optionOrPrompt({
       type: 'input',
       name: 'homepage',
       message: 'Homepage:',

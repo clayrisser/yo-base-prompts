@@ -1,12 +1,12 @@
 {
   "name": "yo-base-prompts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Base prompts for yeoman generators",
-  "homepage": "https://github.com/jamrizzi/yo-base-prompts",
+  "homepage": "https://github.com/codejamninja/yo-base-prompts",
   "author": {
     "name": "Jam Risser",
-    "email": "jam@jamrizzi.com",
-    "url": "https://jam.jamrizzi.com"
+    "email": "jam@codejamninja.com",
+    "url": "https://jam.codejamninja.com"
   },
   "main": "lib/index.js",
   "files": [
@@ -33,7 +33,7 @@
     "eslint-plugin-import": "^2.9.0"
   },
   "license": "MIT",
-  "repository": "https://github.com/jamrizzi/yo-base-prompts",
+  "repository": "https://github.com/codejamninja/yo-base-prompts",
   "babel": {
     "presets": [
       [

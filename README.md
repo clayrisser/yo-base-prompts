@@ -1,8 +1,8 @@
 # yo-base-prompts
 
-[![Beerpay](https://beerpay.io/jamrizzi/yo-base-prompts/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/yo-base-prompts)
-[![Beerpay](https://beerpay.io/jamrizzi/yo-base-prompts/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/yo-base-prompts?focus=wish)
-[![GitHub stars](https://img.shields.io/github/stars/jamrizzi/yo-base-prompts.svg?style=social&label=Stars)](https://github.com/jamrizzi/yo-base-prompts)
+[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/badge.svg?style=beer-square)](https://beerpay.io/codejamninja/yo-base-prompts)
+[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/make-wish.svg?style=flat-square)](https://beerpay.io/codejamninja/yo-base-prompts?focus=wish)
+[![GitHub stars](https://img.shields.io/github/stars/codejamninja/yo-base-prompts.svg?style=social&label=Stars)](https://github.com/codejamninja/yo-base-prompts)
 
 > Base prompts for yeoman generators
 
@@ -39,46 +39,46 @@ npm install --save yo-base-prompts
 
 ## Usage
 
-[Contribute](https://github.com/jamrizzi/yo-base-prompts/blob/master/CONTRIBUTING.md) usage docs
+[Contribute](https://github.com/codejamninja/yo-base-prompts/blob/master/CONTRIBUTING.md) usage docs
 
 
 ## Support
 
-Submit an [issue](https://github.com/jamrizzi/yo-base-prompts/issues/new)
+Submit an [issue](https://github.com/codejamninja/yo-base-prompts/issues/new)
 
 
 ## Screenshots
 
-[Contribute](https://github.com/jamrizzi/yo-base-prompts/blob/master/CONTRIBUTING.md) a screenshot
+[Contribute](https://github.com/codejamninja/yo-base-prompts/blob/master/CONTRIBUTING.md) a screenshot
 
 
 ## Contributing
 
-Review the [guidelines for contributing](https://github.com/jamrizzi/yo-base-prompts/blob/master/CONTRIBUTING.md)
+Review the [guidelines for contributing](https://github.com/codejamninja/yo-base-prompts/blob/master/CONTRIBUTING.md)
 
 
 ## License
 
-[MIT License](https://github.com/jamrizzi/yo-base-prompts/blob/master/LICENSE)
+[MIT License](https://github.com/codejamninja/yo-base-prompts/blob/master/LICENSE)
 
-[Jam Risser](https://jam.jamrizzi.com) &copy; 2018
+[Jam Risser](https://jam.codejamninja.com) &copy; 2018
 
 
 ## Changelog
 
-Review the [changelog](https://github.com/jamrizzi/yo-base-prompts/blob/master/CHANGELOG.md)
+Review the [changelog](https://github.com/codejamninja/yo-base-prompts/blob/master/CHANGELOG.md)
 
 
 ## Credits
 
-* [Jam Risser](https://jam.jamrizzi.com) - Author
+* [Jam Risser](https://jam.codejamninja.com) - Author
 
 
 ## Support on Beerpay (actually, I drink coffee)
 
 A ridiculous amount of coffee :coffee: :coffee: :coffee: was consumed in the process of building this project.
 
-[Add some fuel](https://beerpay.io/jamrizzi/yo-base-prompts) if you'd like to keep me going!
+[Add some fuel](https://beerpay.io/codejamninja/yo-base-prompts) if you'd like to keep me going!
 
-[![Beerpay](https://beerpay.io/jamrizzi/yo-base-prompts/badge.svg?style=beer-square)](https://beerpay.io/jamrizzi/yo-base-prompts)
-[![Beerpay](https://beerpay.io/jamrizzi/yo-base-prompts/make-wish.svg?style=flat-square)](https://beerpay.io/jamrizzi/yo-base-prompts?focus=wish)
+[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/badge.svg?style=beer-square)](https://beerpay.io/codejamninja/yo-base-prompts)
+[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/make-wish.svg?style=flat-square)](https://beerpay.io/codejamninja/yo-base-prompts?focus=wish)
