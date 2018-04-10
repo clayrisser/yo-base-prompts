@@ -17,40 +17,48 @@ export default class YoBasePrompts {
   async prompt(prompts) {
     const result = {};
     if (!prompts || prompts.name) {
-      result.name = await this.namePromt();
+      this.name = result.name = await this.namePromt();
     }
     if (!prompts || prompts.destination) {
-      result.destination = await this.destinationPrompt(result.name);
+      this.destination = result.destination = await this.destinationPrompt(
+        this.name
+      );
     }
     if (!prompts || prompts.description) {
-      result.description = await this.descriptionPrompt();
+      this.description = result.description = await this.descriptionPrompt();
     }
     if (!prompts || prompts.version) {
-      result.version = await this.versionPrompt();
+      this.version = result.version = await this.versionPrompt();
     }
     if (!prompts || prompts.license) {
-      result.license = await this.licensePrompt();
+      this.license = result.license = await this.licensePrompt();
     }
     if (!prompts || prompts.authorName) {
-      result.authorName = await this.authorNamePrompt();
+      this.authorName = result.authorName = await this.authorNamePrompt();
     }
     if (!prompts || prompts.authorEmail) {
-      result.authorEmail = await this.authorEmailPrompt();
+      this.authorEmail = result.authorEmail = await this.authorEmailPrompt();
     }
     if (!prompts || prompts.githubUsername) {
-      result.githubUsername = await this.githubUsernamePrompt(result.email);
+      this.githubUsername = result.githubUsername = await this.githubUsernamePrompt(
+        this.email
+      );
     }
     if (!prompts || prompts.authorUrl) {
-      result.authorUrl = await this.authorUrlPrompt(result.githubUsername);
+      this.authorUrl = result.authorUrl = await this.authorUrlPrompt(
+        this.githubUsername
+      );
     }
     if (!prompts || prompts.repository) {
-      result.repository = await this.repositoryPrompt(
-        result.githubUsername,
-        result.name
+      this.repository = result.repository = await this.repositoryPrompt(
+        this.githubUsername,
+        this.name
       );
     }
     if (!prompts || prompts.homepage) {
-      result.homepage = await this.homepagePrompt(result.repository);
+      this.homepage = result.homepage = await this.homepagePrompt(
+        this.repository
+      );
     }
     return result;
   }
