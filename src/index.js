@@ -41,7 +41,7 @@ export default class YoBasePrompts {
     }
     if (!prompts || prompts.githubUsername) {
       this.githubUsername = result.githubUsername = await this.githubUsernamePrompt(
-        this.email
+        this.authorEmail
       );
     }
     if (!prompts || prompts.authorUrl) {
@@ -73,6 +73,7 @@ export default class YoBasePrompts {
   }
 
   async destinationPrompt(name) {
+    if (!name) name = await this.namePromt();
     const destination = await this.yo.optionOrPrompt({
       type: 'input',
       name: 'destination',
@@ -144,6 +145,7 @@ export default class YoBasePrompts {
   }
 
   async githubUsernamePrompt(authorEmail) {
+    if (!authorEmail) authorEmail = await this.authorEmailPrompt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'githubUsername',
@@ -153,6 +155,7 @@ export default class YoBasePrompts {
   }
 
   async authorUrlPrompt(githubUsername) {
+    if (!githubUsername) githubUsername = await this.githubUsernamePrompt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'authorUrl',
@@ -162,6 +165,8 @@ export default class YoBasePrompts {
   }
 
   async repositoryPrompt(githubUsername, name) {
+    if (!githubUsername) githubUsername = await this.githubUsernamePrompt();
+    if (!name) name = await this.namePromt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'repository',
@@ -171,15 +176,12 @@ export default class YoBasePrompts {
   }
 
   async homepagePrompt(repository) {
+    if (!repository) repository = await this.repositoryPrompt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'homepage',
       message: 'Homepage:',
       default: repository
     });
-  }
-
-  async optionOrPrompt(config) {
-    return (await this.yo.optionOrPrompt([config]))[config.name];
   }
 }
