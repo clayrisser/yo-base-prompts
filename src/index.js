@@ -20,9 +20,7 @@ export default class YoBasePrompts {
       this.name = result.name = await this.namePromt();
     }
     if (!prompts || prompts.destination) {
-      this.destination = result.destination = await this.destinationPrompt(
-        this.name
-      );
+      this.destination = result.destination = await this.destinationPrompt();
     }
     if (!prompts || prompts.description) {
       this.description = result.description = await this.descriptionPrompt();
@@ -40,25 +38,16 @@ export default class YoBasePrompts {
       this.authorEmail = result.authorEmail = await this.authorEmailPrompt();
     }
     if (!prompts || prompts.githubUsername) {
-      this.githubUsername = result.githubUsername = await this.githubUsernamePrompt(
-        this.authorEmail
-      );
+      this.githubUsername = result.githubUsername = await this.githubUsernamePrompt();
     }
     if (!prompts || prompts.authorUrl) {
-      this.authorUrl = result.authorUrl = await this.authorUrlPrompt(
-        this.githubUsername
-      );
+      this.authorUrl = result.authorUrl = await this.authorUrlPrompt();
     }
     if (!prompts || prompts.repository) {
-      this.repository = result.repository = await this.repositoryPrompt(
-        this.githubUsername,
-        this.name
-      );
+      this.repository = result.repository = await this.repositoryPrompt();
     }
     if (!prompts || prompts.homepage) {
-      this.homepage = result.homepage = await this.homepagePrompt(
-        this.repository
-      );
+      this.homepage = result.homepage = await this.homepagePrompt();
     }
     return result;
   }
@@ -72,13 +61,13 @@ export default class YoBasePrompts {
     });
   }
 
-  async destinationPrompt(name) {
-    if (!name) name = await this.namePromt();
+  async destinationPrompt() {
+    if (!this.name) this.name = await this.namePromt();
     const destination = await this.yo.optionOrPrompt({
       type: 'input',
       name: 'destination',
       message: 'Destination:',
-      default: guessProjectDestination(name)
+      default: guessProjectDestination()
     });
     return path.resolve(destination);
   }
@@ -144,44 +133,46 @@ export default class YoBasePrompts {
     });
   }
 
-  async githubUsernamePrompt(authorEmail) {
-    if (!authorEmail) authorEmail = await this.authorEmailPrompt();
+  async githubUsernamePrompt() {
+    if (!this.authorEmail) this.authorEmail = await this.authorEmailPrompt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'githubUsername',
       message: 'GitHub Username:',
-      default: guessUsername(authorEmail)
+      default: guessUsername()
     });
   }
 
-  async authorUrlPrompt(githubUsername) {
-    if (!githubUsername) githubUsername = await this.githubUsernamePrompt();
+  async authorUrlPrompt() {
+    if (!this.githubUsername)
+      this.githubUsername = await this.githubUsernamePrompt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'authorUrl',
       message: 'Author URL:',
-      default: `https://${githubUsername}.com`
+      default: `https://${this.githubUsername}.com`
     });
   }
 
-  async repositoryPrompt(githubUsername, name) {
-    if (!githubUsername) githubUsername = await this.githubUsernamePrompt();
-    if (!name) name = await this.namePromt();
+  async repositoryPrompt() {
+    if (!this.githubUsername)
+      this.githubUsername = await this.githubUsernamePrompt();
+    if (!this.name) this.name = await this.namePromt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'repository',
       message: 'Repository:',
-      default: `https://github.com/${githubUsername}/${name}`
+      default: `https://github.com/${this.githubUsername}/${this.name}`
     });
   }
 
-  async homepagePrompt(repository) {
-    if (!repository) repository = await this.repositoryPrompt();
+  async homepagePrompt() {
+    if (!this.repository) this.repository = await this.repositoryPrompt();
     return this.yo.optionOrPrompt({
       type: 'input',
       name: 'homepage',
       message: 'Homepage:',
-      default: repository
+      default: this.repository
     });
   }
 }

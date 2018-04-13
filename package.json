@@ -1,6 +1,6 @@
 {
   "name": "yo-base-prompts",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Base prompts for yeoman generators",
   "homepage": "https://github.com/codejamninja/yo-base-prompts",
   "author": {
