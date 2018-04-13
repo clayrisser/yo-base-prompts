@@ -67,7 +67,7 @@ export default class YoBasePrompts {
       type: 'input',
       name: 'destination',
       message: 'Destination:',
-      default: guessProjectDestination()
+      default: guessProjectDestination(this.name)
     });
     return path.resolve(destination);
   }
@@ -139,7 +139,7 @@ export default class YoBasePrompts {
       type: 'input',
       name: 'githubUsername',
       message: 'GitHub Username:',
-      default: guessUsername()
+      default: guessUsername(this.authorEmail)
     });
   }
 
