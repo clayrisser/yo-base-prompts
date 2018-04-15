@@ -1,6 +1,6 @@
 {
   "name": "yo-base-prompts",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Base prompts for yeoman generators",
   "homepage": "https://github.com/codejamninja/yo-base-prompts",
   "author": {
@@ -20,7 +20,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "project-guess": "^0.2.3"
+    "project-guess": "^0.2.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
