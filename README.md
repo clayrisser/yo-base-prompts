@@ -1,12 +1,10 @@
 # yo-base-prompts
 
-[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/badge.svg?style=beer-square)](https://beerpay.io/codejamninja/yo-base-prompts)
-[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/make-wish.svg?style=flat-square)](https://beerpay.io/codejamninja/yo-base-prompts?focus=wish)
 [![GitHub stars](https://img.shields.io/github/stars/codejamninja/yo-base-prompts.svg?style=social&label=Stars)](https://github.com/codejamninja/yo-base-prompts)
 
-> Base prompts for yeoman generators
+> base prompts for yeoman generators
 
-Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
+Please ★ this repo if you found it useful ★ ★ ★
 
 
 ## Features
@@ -61,7 +59,7 @@ Review the [guidelines for contributing](https://github.com/codejamninja/yo-base
 
 [MIT License](https://github.com/codejamninja/yo-base-prompts/blob/master/LICENSE)
 
-[Jam Risser](https://jam.codejamninja.com) &copy; 2018
+[Jam Risser](https://codejam.ninja) © 2018
 
 
 ## Changelog
@@ -71,14 +69,14 @@ Review the [changelog](https://github.com/codejamninja/yo-base-prompts/blob/mast
 
 ## Credits
 
-* [Jam Risser](https://jam.codejamninja.com) - Author
+* [Jam Risser](https://codejam.ninja) - Author
 
 
-## Support on Beerpay (actually, I drink coffee)
+## Support on Liberapay
 
-A ridiculous amount of coffee :coffee: :coffee: :coffee: was consumed in the process of building this project.
+A ridiculous amount of coffee ☕ ☕ ☕ was consumed in the process of building this project.
 
-[Add some fuel](https://beerpay.io/codejamninja/yo-base-prompts) if you'd like to keep me going!
+[Add some fuel](https://liberapay.com/codejamninja/donate) if you'd like to keep me going!
 
-[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/badge.svg?style=beer-square)](https://beerpay.io/codejamninja/yo-base-prompts)
-[![Beerpay](https://beerpay.io/codejamninja/yo-base-prompts/make-wish.svg?style=flat-square)](https://beerpay.io/codejamninja/yo-base-prompts?focus=wish)
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/codejamninja.svg?style=flat-square)](https://liberapay.com/codejamninja/donate)
+[![Liberapay patrons](https://img.shields.io/liberapay/patrons/codejamninja.svg?style=flat-square)](https://liberapay.com/codejamninja/donate)
