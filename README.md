@@ -4,6 +4,8 @@
 
 > base prompts for yeoman generators
 
+!()[assets/yo-base-prompts.png]
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 
